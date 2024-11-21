@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and HTML */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header Section */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+header nav ul {
+    /* უნდა იყოს ჩასწორებული მარჯვენა კუთხეში */
+    list-style: none;
+    text-align: end;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+header nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Main Content */
+main {
+  /* დაალაგეთ ერთმანეთის გვერდიგვერდ */
+  margin: 20px;
+  min-height: 80vh;
+  display: flex;
+}
+.sidebar {
+  background: #f4f4f4;
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  flex-grow: 1;
+  /* უნდა იკავებდეს ეკრანის 1/4 */
+}
+.content {
+  background: #eaeaea;
+  padding: 20px;
+  border-radius: 5px;
+  flex-grow: 3;
+  /* უნდა იკავებდეს ეკრანის 3/4 */
+}
+
+/* Footer Section */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+}
